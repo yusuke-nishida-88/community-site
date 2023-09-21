@@ -1,6 +1,6 @@
 {
-	"name": "PushEngage",
-	"short_name": "PushEngage",
+	"name": "ClubPMV",
+	"short_name": "ClubPMV",
 	"start_url": "/",
 	"display": "standalone",
 	"theme_color": "#3b43ff",
