@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Club PMV</title>
+  <script defer src="https://www.pushcode.jp/dist/js/pushcode.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <script>
+  window.PushCodeInit = function() {
+    try {
+      if (PushCode && PushCode.isSupport()) {
+        PushCode.init({ domainToken: '7bd81fadf9ef7efe4709b8d8b39bf4805efcfbf8dbd970642e4f44977a5f7ec6', userid: '' });
+          PushCode.components.openSubscribeDialog();
+      }
+    }
+    catch (err) {
+      console.error(err);
+      if (PushCode) {
+        PushCode.sendError(err);
+      }
+    }
+  };
+  </script>
 </head>
 <body>
   <div class="header">Club PMV</div>
